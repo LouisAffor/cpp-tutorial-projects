@@ -128,27 +128,10 @@ simulate_game(Input* input, float dt)
 		draw_number(player_1_score, -10, 38, 2.f, 0xffffff);
 		draw_number(player_2_score, 10, 38, 2.f, 0xffffff);
 
+		// dashed line
+		for (float dash = -45; dash <= 45; dash = dash+5)
 		{ 
-			// dashed line
-			draw_rect(0, 45.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 40.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 35.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 30.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 25.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 20.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 15.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 10.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 5.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, 0, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -5.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -10.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -15.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -20.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -25.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -30.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -35.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -40.f, 0.5, 1.f, 0xffffff);
-			draw_rect(0, -45.f, 0.5, 1.f, 0xffffff);
+			draw_rect(0, dash, 0.5, 1.f, 0xffffff);
 		}
 
 		//rendering
