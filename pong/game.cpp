@@ -129,7 +129,7 @@ simulate_game(Input* input, float dt)
 		draw_number(player_2_score, 10, 38, 2.f, 0xffffff);
 
 		// dashed line
-		for (float dash = -45; dash <= 45; dash = dash+5)
+		for (float dash = -45; dash <= 45; dash = dash + 5)
 		{ 
 			draw_rect(0, dash, 0.5, 1.f, 0xffffff);
 		}
